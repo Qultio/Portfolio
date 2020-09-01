@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Q-Corp. Survey Form</h1>
+            <p>Thanks for taking the time to fill our mailbox with nonsense :)</p>
+        </header>
+        <section>
+            <form>
+                <div class="form_group">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" class="form_control" placeholder="Enter name" required />
+                </div>
+                <div class="form_group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" class="form_control" placeholder="Enter email" required />
+                </div>
+                <div class="form_group">
+                    <label for="age">Age (optional)</label>
+                    <input type="number" name="age" id="number" min="10" max="99" class="form_control" placeholder="Age" />
+                </div>
+                <div class="form_group">
+                    <p>What day-job are you doing now?</p>
+                    <select id="dropdown" name="role" class="form_control" required>
+                        <option disabled selected value>Select job</option>
+                        <option value="student">Student</option>
+                        <option value="job">Full Time Job</option>
+                        <option value="learner">Full Time Learner</option>
+                        <option value="preferNo">Prefer not to say</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form_group">
+                    <p>Would you fill this again?</p>
+                    <label>
+                        <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked /> Definitely
+                    </label>
+                    <label>
+                        <input name="user-recommend" value="maybe" type="radio" class="input-radio" />Maybe
+                    </label>
+                    <label>
+                        <input name="user-recommend" value="not-sure" type="radio" class="input-radio" />Not Sure
+                    </label>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
